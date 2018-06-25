@@ -185,7 +185,7 @@ startElement(void *userData, const char *name, const char **atts)
 static void string_unescape(char *text, const char *s, int len)
 {
 	int in_c = 0;
-	char c;
+	char c = 0;
 	char *d = text + strlen(text);
 
 	while (len) {
