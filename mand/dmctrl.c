@@ -15,7 +15,7 @@
 #include <sys/socket.h>
 #include <sys/ioctl.h>
 #include <sys/un.h>
-#include <sys/poll.h>
+#include <poll.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <syslog.h>
