@@ -14,10 +14,11 @@
 #endif
 #include <arpa/inet.h>
 #include <netinet/in.h>
-#include <bits/byteswap.h>
+#include <byteswap.h>
 #include <stdint.h>
 #include <string.h>
 #include <sys/queue.h>
+#include <sys/time.h>
 
 #ifdef HAVE_TALLOC_TALLOC_H
 # include <talloc/talloc.h>

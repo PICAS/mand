@@ -152,7 +152,7 @@ accept_cb(DMCONFIG_EVENT event, DMCONTEXT *socket, void *userdata)
 	dm_context_set_userdata(socket, ctx);
 	ctx->socket = socket;
 
-	ev_timer_init(&ctx->session_timer_ev, sessionTimeoutEvent, 0., 0.);
+	ev_timer_init(&ctx->session_timer_ev, (void *) sessionTimeoutEvent, 0., 0.);
 	ctx->session_timer_ev.data = ctx;
 
 	/* ev_timer_start(socket->ev, &ctx->session_timer_ev); */
